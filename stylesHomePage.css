@@ -1,0 +1,82 @@
+/* Atur margin dan padding global */
+html, body {
+    margin: 0; /* Hilangkan margin bawaan */
+    padding: 0; /* Hilangkan padding bawaan */
+    box-sizing: border-box; /* Memastikan perhitungan lebar elemen */
+}
+
+/* Container header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* ukuran cointainer */
+    background-color: pink;
+    width: 100vw; /* Lebar penuh sesuai layar */
+    height: auto; /* Menyesuaikan tinggi dengan konten */
+}
+
+/* Gaya untuk logo */
+.logo-brand {
+    width: 200px;
+    height: auto;
+    margin-left: 20px;
+}
+
+/* Container untuk ikon keranjang dan profil */
+.menu {
+    display: flex;
+    align-items: center; /* Selaraskan elemen secara vertikal */
+    gap: 15px; /* Jarak antar elemen keranjang dan profil */
+    margin-right: 20px; /* membuat icon lebih ke kiri karena ada jarak dari kanan */
+}
+
+/* Gaya untuk gambar profil */
+.profile-user,
+.keranjang-user,
+.produk-admin {
+    width: 50px; /* Ukuran lebih kecil untuk ikon */
+    height: 50px; /* Pastikan konsisten dengan width */
+    border-radius: 50%; /* Membuat lingkaran */
+    cursor: pointer; /* Menambahkan pointer saat gambar di-hover */
+    transition: transform 0.2s ease; /* Animasi saat di-hover */
+}
+
+/* Efek hover pada gambar */
+.profile-user:hover, 
+.keranjang-user:hover,
+.produk-admin:hover {
+    transform: scale(1.1); /* Membesarkan gambar sedikit saat di-hover */
+}
+
+.pencarian{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Membuat kontainer ini tumbuh untuk menempati ruang kosong */
+    gap: 10px; /* Jarak antara input dan tombol */
+    max-width: 500px; /* Batas maksimal lebar */
+}
+
+.pencarian-bar{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.pencarian-button{
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF; /* Warna biru */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.pencarian-button:hover{
+    background-color: #0056b3; /* Warna biru lebih gelap saat hover */
+}
